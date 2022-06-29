@@ -1,0 +1,33 @@
+html,
+body,
+#root,
+#page {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+#page {
+    background-color: rgb(31, 31, 31);
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 10px;
+    display: inline-block;
+    
+}
+
+.navLink:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(125,125,125);
+}
+
+#navbar{
+    text-align: center;
+    height: 50px;
+}
