@@ -14,7 +14,7 @@ const Layout = () => {
           className="navLink"
           to="/"
         >
-          Home
+          <i>Home</i>
         </Link>
 
         <Link
@@ -26,7 +26,7 @@ const Layout = () => {
           className="navLink"
           to="/about"
         >
-          About
+          <i>About</i>
         </Link>
 
         <Link
@@ -38,7 +38,7 @@ const Layout = () => {
           className="navLink"
           to="/contact"
         >
-          Contact
+          <i>Contact</i>
         </Link>
 
         <Link
@@ -48,7 +48,7 @@ const Layout = () => {
           className="navLink"
           to="/work"
         >
-          Work
+          <i>Work</i>
         </Link>
       </nav>
 
