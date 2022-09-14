@@ -52,7 +52,9 @@ const Layout = () => {
         </Link>
       </nav>
 
-      <Outlet />
+      <div className="layout-content">
+        <Outlet />
+      </div>
     </div>
   );
 };

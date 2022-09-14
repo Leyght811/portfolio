@@ -1,7 +1,89 @@
-.home-text-box{
-    background-color: rgba(60, 60, 60, 0.6);
+.home-page {
+  height: 100%;
+  width: 100%;
 }
 
-.home-text-header{
+.home-text-box {
+  background-color: rgba(60, 60, 60, 0.6);
+  position: relative;
+  padding: 20px;
+  width: 30vw;
+  height: calc(100vh - 190px);
+  top: 50px;
+  display: inline-flex;
+  user-select: none;
+  padding-right: 0;
+  transition: left 0.5s;
+}
+
+.home-text-header {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.home-text-content {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.home-text-link {
+  font-size: 50px;
+  padding-right: 20px;
+}
+
+.home-canvas {
+  /* width: 50vw !important; */
+  display: inline-block !important;
+  position: absolute !important;
+  top: -50px;
+  height: 100vh !important;
+}
+
+.home-text-collapse {
+  flex: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.home-text-uncollapsed {
+  flex: calc(100% - 30px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-refresh-button {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(60, 60, 60, 0.6);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50px 0px 0px 0px;
+  font-size: 20px;
+  bottom: 0;
+  right: 0;
+}
+
+.refresh {
+  position: relative;
+  left: 8px;
+  top: 6px;
+}
+
+@media only screen and (max-width: 1070px) {
+  .home-text-header{
     font-size: 30px;
+  }
+
+  .home-text-content{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home-text-box{
+    width: 100vw;
+  }
 }

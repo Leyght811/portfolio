@@ -10,29 +10,43 @@ body,
 }
 
 #page {
-    background-color: rgb(31, 31, 31);
+  background-color: rgb(31, 31, 31);
 }
 
 .navLink {
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
-    margin: 10px;
-    display: inline-block;
-    
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  margin: 10px;
+  display: inline-block;
+  user-select: none;
 }
 
-.navLink:hover{
-    text-decoration: underline;
-    text-decoration-color: rgb(125,125,125);
+.navLink:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(125, 125, 125);
 }
 
-#navbar{
-    text-align: center;
-    height: 50px;
+#navbar {
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
 }
 
-.text{
-    color: white;
-    
+.layout-content {
+  position: relative;
+  top: 50px;
+  height: calc(100vh - 50px);
+}
+
+.text {
+  color: white;
+}
+
+@media only screen and (max-width: 374px) {
+    .navLink{
+        font-size: 16px;
+    }
 }
