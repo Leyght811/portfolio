@@ -11,6 +11,7 @@
   left: 5%;
   top: 5%;
   padding: 20px;
+  overflow: auto;
 }
 
 .about-text-header{
@@ -21,7 +22,7 @@
 }
 
 .about-text-content{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-size: 30px;
 }
 
@@ -31,4 +32,14 @@
 
 .cv-button:hover{
     color: black;
+}
+
+@media only screen and (max-width: 1350px) {
+  .about-text-content{
+    font-size: 20px;
+  }
+
+  .about-text-header{
+    font-size: 30px;
+  }
 }

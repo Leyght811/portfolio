@@ -26,7 +26,7 @@ const About = () => {
           </div>
         </div>
         <div className="about-text-content text">
-          <i>
+          <i className="about-text-italic">
             <b>Software development, web design and 3D modelling</b>
             <br />
             My name is Wesley Wright, in 2017 through to 2020 I studied at UCOL
