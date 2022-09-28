@@ -1,4 +1,133 @@
-.contact-page{
+.contact-page {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-page-content {
+  
+  position: relative;
+  height: calc(90% - 20px);
+  width: calc(90vw - 20px);
+  left: 5%;
+  top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-page-form {
+    background-color: rgba(60, 60, 60, 0.6);
     height: 100%;
-    width: 100%;
+    padding: 20px;
+    flex: 2;
+    min-width: 600px;
+    margin-right: 20px;
+}
+
+.contact-page-text {
+    background-color: rgba(60, 60, 60, 0.6);
+    height: 100%;
+    padding: 20px;
+    flex: 1;
+}
+
+.contact-header{
+    font-size: 50px;
+    padding-bottom: 20px;
+    /* white-space: nowrap; */
+}
+
+.contact-text-info{
+    white-space: nowrap;
+}
+
+.contact-form-subject{
+    width: 470px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.contact-form-subject > input{
+    flex: 1;
+}
+
+.contact-form-body{
+    width: 470px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.contact-form-body > textarea{
+    flex: 1;
+    height: 300px;
+    resize: none;
+}
+
+.contact-form-label{
+    flex: 0 0 70px;
+    display: inline-block;
+}
+
+.contact-form-submission{
+    width: 470px;
+}
+.contact-form-submission-button{
+    width: 70px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    left: 400px;
+    background-color: white;
+    color: rgb(31, 31, 31);
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+.contact-form-submission-button:hover{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .contact-page-content{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contact-page-text{
+        margin-top: 20px;
+        height: 200px;
+    }
+
+    .contact-page-form{
+        min-width: 0;
+        flex: 1;
+        margin: 0;
+    }
+
+    .contact-form-body{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-form-body > textarea{
+        flex: 0 0 300px;
+    }
+
+    .contact-form-subject{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-form-submission{
+        width: 100%;
+    }
+
+    .contact-form-submission-button{
+        left: calc(100% - 70px);
+    }
+
+    .contact-form-label{
+        flex: 0 0 100%;
+    }
 }
