@@ -1,8 +1,8 @@
-#HomeSection {
+#home-section {
     height: 100vh;
 }
 
-#HomeCanvas {
+#home-canvas {
     position: absolute;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
     z-index: 0;
 }
 
-#HomeContainer {
+#home-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,36 +26,28 @@
     
 }
 
-#HomeMain{
+#home-main{
     flex-direction: row;
     
     display: flex;
 }
 
-#HomeInfo {
+#home-info {
     display: flex;
     flex-direction: column;
     /* flex-grow: 3; */
     padding: 10px;
 }
 
-#HomeInfoText {
+#home-info-text {
     color: white;
 }
 
-#HomeInfoText span {
+#home-info-text span {
     color: rgb(74, 174, 199);
 }
 
-#HomeInfoButtons button {
-    background-color: rgb(74, 174, 199);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 0.75rem 2.5rem;
-    font-weight: 600;
-}
 
-#HomeFooter {
+#home-footer {
     color: white;
 }

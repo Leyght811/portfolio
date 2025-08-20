@@ -1,0 +1,26 @@
+#about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#about-info {
+    display: flex;
+    flex-direction: row;
+    max-width: 768px;
+    margin: 24px;
+}
+
+#about-image img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+#about-text {
+    color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 24px;
+}

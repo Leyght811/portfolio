@@ -3,7 +3,7 @@ import CanvasWithOverlay from "./CanvasWithOverlay"
 
 const HomeSection = () => {
     return (
-        <div id="HomeSection">
+        <div id="home-section">
             <CanvasWithOverlay />
         </div>
     )
