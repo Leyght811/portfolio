@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import "../styles/content.css"
 import AboutSection from './AboutSection';
 import ContactSection from './ContactSection';

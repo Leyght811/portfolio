@@ -21,7 +21,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
 const NavButton = ({ text, currentPage, setCurrentPage }) => {
     return (
         <div
-            className={currentPage == text && "active"}
+            className={currentPage === text && "active"}
             onClick={() => setCurrentPage(text)}
         >
             {text}

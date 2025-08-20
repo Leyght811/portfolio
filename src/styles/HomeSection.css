@@ -1,3 +1,61 @@
-#HomeSection{
+#HomeSection {
     height: 100vh;
+}
+
+#HomeCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+#HomeContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#HomeMain{
+    flex-direction: row;
+    
+    display: flex;
+}
+
+#HomeInfo {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 3; */
+    padding: 10px;
+}
+
+#HomeInfoText {
+    color: white;
+}
+
+#HomeInfoText span {
+    color: rgb(74, 174, 199);
+}
+
+#HomeInfoButtons button {
+    background-color: rgb(74, 174, 199);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.75rem 2.5rem;
+    font-weight: 600;
+}
+
+#HomeFooter {
+    color: white;
 }
