@@ -41,7 +41,7 @@ const SkillsSection = () => {
         );
     };
     return (
-        <div id="skills-section">
+        <div className="section-container">
             <h2 className="section-headers">Skills</h2>
             <div id="skills-list">
                 <BSAccordion

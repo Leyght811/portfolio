@@ -1,0 +1,37 @@
+#projects-slider {
+    width: 80vw;
+    overflow: auto;
+    margin: 10px;
+    white-space: nowrap;
+    
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(74, 174, 199);
+    border-radius: 8px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(74, 153, 199);
+} */
+
+.project-card {
+    height: 255px;
+    margin: 8px;
+    width: 255px;
+    background-color: blue;
+    display: inline-block;
+}

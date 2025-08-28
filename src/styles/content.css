@@ -1,6 +1,54 @@
+/* Make sure the page background behind the root scrollbar is black */
+html,
+body {
+    background: #000;
+}
+
+@-moz-document url-prefix() {
+    /* Firefox (applies to any element that can scroll) */
+    html,
+    body {
+        scrollbar-color: rgb(74, 174, 199) rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Chrome/Edge/Safari (WebKit/Blink) — must be top-level rules */
+*::-webkit-scrollbar {
+    width: 3px; /* vertical */
+    height: 3px; /* horizontal */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(74, 174, 199);
+    border-radius: 10px;
+    border: 3px solid transparent; /* creates a gap so the page bg shows through */
+}
+
+/* Optional: nicer hover state */
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(64, 154, 179);
+}
+
+body {
+    overflow: hidden; /* disable main scrollbar */
+}
+
 #content {
-    padding-top: 48px;
+    margin-top: 53.5px;
     background-color: black;
+    overflow-y: scroll;
+    height: calc(100vh - 53.5px);
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-headers {
@@ -9,7 +57,7 @@
     text-underline-offset: 10px;
 }
 
-.big-button button{
+.big-button button {
     background-color: rgb(74, 174, 199);
     border: none;
     border-radius: 5px;
