@@ -5,9 +5,9 @@ import BigButton from "../BigButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 
-const AboutSection = () => {
+const AboutSection = ({ref}) => {
     return(
-        <div className="section-container">
+        <div ref={ref} className="section-container">
             <h2 className="section-headers">
                 About
             </h2>

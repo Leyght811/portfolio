@@ -1,6 +1,6 @@
-const ContactSection = () => {
+const ContactSection = ({ref}) => {
     return (
-        <div>
+        <div ref={ref}>
 
         </div>
     )

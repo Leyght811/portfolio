@@ -12,7 +12,7 @@ import threeIcon from "../../images/three-js-white.ico";
 import djangoIcon from "../../images/django-icon.png";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
-const SkillsSection = () => {
+const SkillsSection = ({ref}) => {
     const JSItems = () => {
         return (
             <div>
@@ -41,7 +41,7 @@ const SkillsSection = () => {
         );
     };
     return (
-        <div className="section-container">
+        <div ref={ref} className="section-container">
             <h2 className="section-headers">Skills</h2>
             <div id="skills-list">
                 <BSAccordion

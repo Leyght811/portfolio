@@ -1,6 +1,6 @@
 import "../styles/navbar.css";
 
-const Navbar = ({ currentPage, setCurrentPage }) => {
+const Navbar = ({ currentPage, setCurrentPage, scrollTo }) => {
     return (
         <div className="topnav">
             {["Home", "About", "Skills", "Projects", "Contact"].map(
@@ -10,6 +10,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                             text={buttonText}
                             currentPage={currentPage}
                             setCurrentPage={setCurrentPage}
+                            scrollTo={scrollTo}
                         />
                     );
                 }
@@ -18,11 +19,14 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
     );
 };
 
-const NavButton = ({ text, currentPage, setCurrentPage }) => {
+const NavButton = ({ text, currentPage, setCurrentPage, scrollTo }) => {
     return (
         <div
             className={currentPage === text && "active"}
-            onClick={() => setCurrentPage(text)}
+            onClick={() => {
+                setCurrentPage(text);
+                scrollTo(text);
+            }}
         >
             {text}
         </div>

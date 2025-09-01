@@ -1,9 +1,9 @@
 import "../../styles/HomeSection.css"
 import CanvasWithOverlay from "./CanvasWithOverlay"
 
-const HomeSection = () => {
+const HomeSection = ({ref}) => {
     return (
-        <div id="home-section">
+        <div ref={ref} id="home-section">
             <CanvasWithOverlay />
         </div>
     )
