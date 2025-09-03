@@ -1,5 +1,5 @@
 import "../../styles/AboutSection.css"
-import "../../styles/content.css"
+import "../../styles/Content.css"
 import image from "../../images/166174698_4058100004254658_8371604346512076007_n.jpg"
 import BigButton from "../BigButton"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

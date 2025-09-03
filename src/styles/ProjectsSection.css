@@ -3,7 +3,7 @@
     overflow: auto;
     margin: 10px;
     white-space: nowrap;
-    
+    height: 319px;
 }
 
 
@@ -28,10 +28,48 @@
     background: rgb(74, 153, 199);
 } */
 
+.project-card:hover{
+    height: 287px;
+    width: 287px;
+    margin-top: 0px;
+    .project-card-img{
+        height: 208px;
+    }
+    .project-card-name{
+        height: 79px;
+    }
+    /* .project-card-img img{
+        width: 287px;
+    } */
+}
+
 .project-card {
     height: 255px;
     margin: 8px;
     width: 255px;
-    background-color: blue;
     display: inline-block;
+    margin-top: 32px;
+}
+
+.project-card-img{
+    height: 192px;
+    width: 100%;
+    background-color: red;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.project-card-img img {
+    width: 100%;
+}
+
+.project-card-name{
+    height: 63px;
+    width: 100%;
+    background-color: rgb(74, 174, 199);
+    border-radius: 0 0 8px 8px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }

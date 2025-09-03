@@ -1,4 +1,4 @@
-import "../../styles/content.css";
+import "../../styles/Content.css";
 import "../../styles/SkillsSection.css";
 import {
     faNodeJs,
